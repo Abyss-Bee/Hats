@@ -1,0 +1,6 @@
+name: Hats
+version: ${project.version}
+main: me.DuckyProgrammer.Hats.Main
+author: DuckyProgrammer
+description: A plugin that allows players to wear hats!
+api-version: 1.13
