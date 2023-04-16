@@ -10,10 +10,11 @@ import org.bukkit.entity.Player;
 public class HatCommand implements CommandExecutor {
 
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if (!(sender instanceof Player player)) {
+        if (!(sender instanceof Player)) {
             sender.sendMessage(ChatColor.RED + "You must be a player to use this command!");
             return false;
         }
+        Player player = (Player) sender;
         if (!player.hasPermission("hats.hat")) {
             player.sendMessage(ChatColor.RED + "You do not have permission to use this command!");
             return false;
