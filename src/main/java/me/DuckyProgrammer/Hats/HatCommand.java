@@ -15,7 +15,7 @@ public class HatCommand implements CommandExecutor {
             return false;
         }
         Player player = (Player) sender;
-        if (!player.hasPermission("hats.hat")) {
+        if (!player.("hats.hat")) {
             player.sendMessage(ChatColor.RED + "You do not have permission to use this command!");
             return false;
         }
